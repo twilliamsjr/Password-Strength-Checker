@@ -41,8 +41,6 @@ def check_password_strength(password):
     else:
         return "Weak", suggestions
 
-# --- THE FIX IS BELOW ---
-# Notice how this 'if' is all the way to the left now?
 if __name__ == "__main__":
     print("--- Password Strength Checker ---")
     while True:
@@ -52,7 +50,7 @@ if __name__ == "__main__":
             print("Exiting...")
             break
 
-        # We capture the result in variables so we can print them nicely
+        # Capture the result in variables
         strength, feedback = check_password_strength(user_pass)
 
         print(f"Result: {strength}")
